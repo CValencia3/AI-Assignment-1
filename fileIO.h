@@ -7,7 +7,7 @@ using namespace std;
 
 class fileIO
 {
-    //A class for parsing a text file containing a list of numbers into an array
+    //A class for parsing a text file
     public:
         // Default constructor
         fileIO();
@@ -17,9 +17,12 @@ class fileIO
         ~fileIO();
 
         // Method returns an array generated from the file given
-        double* getArray();
+        char** read();
+        // reads x,y
+        //  or col,row
+        int getSize();
 
         string filepath;
-        double *output;
+        char **output;
         int length;
 };
