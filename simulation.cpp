@@ -167,14 +167,14 @@ void simulation::printBoard()
 void simulation::printSolution(TreeNode* end)
 {
     cout << "Solution:" << endl;
-    for(TreeNode* curr = end->path; curr != NULL; curr= curr->path)
+    for(TreeNode* curr = end->path; curr != problem->root; curr= curr->path)
     {
         totalPath += curr->weight;
         solution.world[curr->key.first][curr->key.second] = 'o';
     }
 
     totalPath += steps;
-
+    
     solution.print();
 
     cout << endl << "Path Cost: " << totalPath << endl;

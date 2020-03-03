@@ -27,6 +27,17 @@ int main(int argc, char const *argv[])
         try
         {
             cout << endl << "Best-First Robot Navigation" << endl;
+            switch (mode)
+            {
+                case 0: cout << "Strategy 1" << endl;
+                    break;
+                case 1: cout << "Strategy 2" << endl;
+                    break;
+                case 2: cout << "Strategy 3" << endl;
+                    break;
+                case 3: cout << "Strategy 4" << endl;
+                    break;
+            }
             fileIO f(filepath);
             //char** array = f.read();
             gameBoard g(f.read(), f.getSize());

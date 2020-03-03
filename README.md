@@ -7,6 +7,7 @@ Best-First Robot Navigation
 valen193@mail.chapman.edu
 
 ## Instructions
+Select mode in main.cpp
 - `make`
 - `./cValencia.out [filepath]`
 
