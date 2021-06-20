@@ -12,7 +12,7 @@ valen193@mail.chapman.edu
 
 using namespace std;
 
-int mode = 3;
+int mode = 2;
 // 0 = Strategy 1 - Euclidian Distance
 // 1 = Strategy 2 - Manhattan Distance
 // 2 = Strategy 3 - Euclidian Distance + cost of path so far
